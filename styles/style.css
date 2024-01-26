@@ -32,11 +32,13 @@
 }
 
 .outline-btn:hover{
- background: hsl(240, 50%, 60%)
+ background: hsl(240, 50%, 60%);
+ cursor: pointer;
 }
 
 .solid-btn:hover {
-    background: hsl(240, 50%, 60%)
+    background: hsl(240, 50%, 60%);
+    cursor: pointer;
 }
 
 .card-image {
@@ -49,6 +51,10 @@
    width: 100%;
    aspect-ratio: 16/9;
    object-fit: cover;
+}
+
+.card:hover .card-image > img {
+    scale: 1.15;
 }
 
 .btn + .btn {
