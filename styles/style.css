@@ -1,0 +1,56 @@
+*, *::before, *::after {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.card {
+   box-shadow: 1px 3px 7px 0.2px hsl(240, 50%, 70%);
+    padding: 0.75rem;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.solid-btn {
+    border: none;
+    background-color: hsl(240, 50%, 70%);
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+}
+
+.outline-btn {
+    border: none;
+    background: none;
+    box-shadow: 1px 1px 1px hsl(240, 50%, 80%);
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+}
+
+.outline-btn:hover{
+ background: hsl(240, 50%, 60%)
+}
+
+.solid-btn:hover {
+    background: hsl(240, 50%, 60%)
+}
+
+.card-image {
+    overflow: hidden;
+}
+
+.card-image > img {
+    display: block;
+    max-height: 300px;
+   width: 100%;
+   aspect-ratio: 16/9;
+   object-fit: cover;
+}
+
+.btn + .btn {
+    margin-left: 0.25rem;
+}
